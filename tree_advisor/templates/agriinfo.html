@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Agriculture Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8e9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .chatbox {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .chatbox h2 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .chat {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .ai-message {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      border-left: 4px solid #66bb6a;
+      white-space: pre-wrap; /* ✅ allows wrapping while keeping line breaks */
+      word-wrap: break-word; /* ✅ breaks long words if needed */
+    }
+
+    .input-summary {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #c8e6c9;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chatbox">
+    <h2>🌿 Agriculture AI Assistant</h2>
+
+    <div class="input-summary">
+      Your Inputs:<br/>
+      - Soil Type: {{ soil }}<br/>
+      - Tree Seed: {{ seed }}<br/>
+      - Rain Condition: {{ rain }}<br/>
+      - Region: {{ region }}<br/>
+      - Land Size: {{ land }}<br/>
+      - Temperature: {{ temperature }} °C<br/>
+      - Purpose: {{ purpose }}
+    </div>
+
+    <div class="chat">
+      <div class="ai-message">
+        {{ model_output }}
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
