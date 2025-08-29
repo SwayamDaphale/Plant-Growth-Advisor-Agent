@@ -1,11 +1,3 @@
-Perfect 👍 — your README is already very clean.
-Since you want to include **instructions for Google Gemini API key setup** (because your project uses Gemini for recommendations), here’s how you can extend the documentation.
-
-Below is the **modified README.md** with an additional **🔑 API Key Setup** section that explains how to generate and configure the Gemini API key.
-
----
-
-```markdown
 # Plant-Growth-Advisor-Agent
 
 # 🌱 Tree Advisor – Intelligent Crop Recommendation System
